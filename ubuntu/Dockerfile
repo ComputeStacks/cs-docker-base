@@ -1,6 +1,10 @@
 FROM phusion/baseimage:focal-1.1.0
 
-LABEL maintainer="ComputeStacks <hello@computestacks.com>"
+LABEL maintainer="https://github.com/ComputeStacks"
+LABEL org.opencontainers.image.authors="https://github.com/ComputeStacks"
+LABEL org.opencontainers.image.source="https://github.com/ComputeStacks/cs-docker-base/tree/main/ubuntu"
+LABEL org.opencontainers.image.url="https://github.com/ComputeStacks/cs-docker-base/tree/main/ubuntu"
+LABEL org.opencontainers.image.title="ComputeStacks Ubuntu Base Image"
 
 RUN groupadd -r mysql && useradd -r -g mysql mysql
 
