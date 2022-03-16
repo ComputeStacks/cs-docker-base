@@ -8,7 +8,7 @@ workflow:
     - when: always
     
 variables:
-  FULL_IMAGE: $CI_REGISTRY_IMAGE:$CI_COMMIT_SHORT_SHA-$CI_JOB_ID
+  FULL_IMAGE: $CI_REGISTRY_IMAGE:$CI_COMMIT_SHORT_SHA-$CI_PIPELINE_ID
     
 stages:
   - build
