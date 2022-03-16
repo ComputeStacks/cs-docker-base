@@ -17,16 +17,16 @@ stages:
 build:
   stage: build
   tags:
-    - shell
-  before_script:
-  - echo "$CI_REGISTRY_PASSWORD" | docker login $CI_REGISTRY --username $CI_REGISTRY_USER --password-stdin
-  - echo "$DH_PW" | docker login -u $DH_USER --password-stdin
+    - shell  
   script:
     - "docker build -t $FULL_IMAGE ubuntu"
 deploy:
   stage: deploy
   tags:
-  - shell  
+  - shell
+  before_script:
+  - echo "$CI_REGISTRY_PASSWORD" | docker login $CI_REGISTRY --username $CI_REGISTRY_USER --password-stdin
+  - echo "$DH_PW" | docker login -u $DH_USER --password-stdin
   after_script:
     - docker logout $CI_REGISTRY
     - docker logout
