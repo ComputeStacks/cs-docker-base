@@ -4,7 +4,7 @@
 
 ## Submitting Issues
 
-You may open an issue on our gitlab instance, [here](https://git.cmptstks.com/cs-public/images/php/-/issues). However, for questions or how-to's, please [post on our forum](https://forum.computestacks.com).
+You may open an issue on our gitlab instance, [here](https://git.cmptstks.com/cs-public/images/base-image/-/issues). However, for questions or how-to's, please [post on our forum](https://forum.computestacks.com).
 
 
 ## Contributing
