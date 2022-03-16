@@ -1,5 +1,13 @@
 # ComputeStacks Docker Base Images
 
-[![Docker](https://github.com/ComputeStacks/cs-docker-base/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/ComputeStacks/cs-docker-base/actions/workflows/docker-publish.yml)
+[![gitlab ci](https://git.cmptstks.com/cs-public/images/base-image/badges/main/pipeline.svg)](https://git.cmptstks.com/cs-public/images/base-image/-/jobs)
 
-Currently we just have a very large Ubuntu image that we use for our php-base images.
+## Submitting Issues
+
+You may open an issue on our gitlab instance, [here](https://git.cmptstks.com/cs-public/images/php/-/issues). However, for questions or how-to's, please [post on our forum](https://forum.computestacks.com).
+
+
+## Contributing
+
+Contributions are welcome! Before you submit a pull request, feel free to [post on our forum](https://forum.computestacks.com) your idea and we can have a discussion.
+
