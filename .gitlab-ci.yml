@@ -19,7 +19,7 @@ build:
   tags:
     - shell  
   script:
-    - "docker build -t $FULL_IMAGE ubuntu"
+    - "docker build --no-cache -t $FULL_IMAGE ubuntu"
 deploy:
   stage: deploy
   tags:
