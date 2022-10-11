@@ -1,10 +1,10 @@
 # ComputeStacks Docker Base Images
 
-[![gitlab ci](https://git.cmptstks.com/cs-public/images/base-image/badges/main/pipeline.svg)](https://git.cmptstks.com/cs-public/images/base-image/-/jobs)
+[![Build Image](https://github.com/ComputeStacks/cs-docker-base/actions/workflows/build-image.yml/badge.svg)](https://github.com/ComputeStacks/cs-docker-base/actions/workflows/build-image.yml)
 
 ## Submitting Issues
 
-You may open an issue on our gitlab instance, [here](https://git.cmptstks.com/cs-public/images/base-image/-/issues). However, for questions or how-to's, please [post on our forum](https://forum.computestacks.com).
+If you encounter a technical issue, you may [open an issue](https://github.com/ComputeStacks/cs-docker-base/issues). However, for questions or how-to's, please [post on our forum](https://forum.computestacks.com).
 
 
 ## Contributing
