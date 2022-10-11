@@ -48,7 +48,7 @@ jobs:
         id: build-and-push
         uses: docker/build-push-action@v3
         with:
-          context: .
+          context: ubuntu/
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
             cmptstks/phpmyadmin:v2
