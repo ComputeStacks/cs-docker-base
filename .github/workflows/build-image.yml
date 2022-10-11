@@ -51,9 +51,9 @@ jobs:
           context: ubuntu/
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
-            cmptstks/phpmyadmin:v2
-            cmptstks/phpmyadmin:latest
-            ghcr.io/${{ env.GH_REPO }}:v2
+            cmptstks/baseimage:ubuntu
+            cmptstks/baseimage:latest
+            ghcr.io/${{ env.GH_REPO }}:ubuntu
             ghcr.io/${{ env.GH_REPO }}:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
