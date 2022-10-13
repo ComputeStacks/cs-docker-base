@@ -51,7 +51,7 @@ jobs:
         id: build-and-push
         uses: docker/build-push-action@v3
         with:
-          context: ubuntu/
+          context: ubuntu-jammy/
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
             cmptstks/baseimage:ubuntu-jammy            
