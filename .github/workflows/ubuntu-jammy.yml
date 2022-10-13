@@ -1,14 +1,17 @@
-name: Build Image
+name: Ubuntu Jammy
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: '15 21 * * 2'
+    - cron: '12 21 * * 2'  
   push:
     branches: [ "main" ]
-    # Publish semver tags as releases.
-    tags: [ 'v*.*.*' ]
+    paths:
+      - "ubuntu-jammy/**"
   pull_request:
     branches: [ "main" ]
+    paths:
+      - "ubuntu-jammy/**"
 
 env:
   # The default repo env will be 'ComputeStacks'; uppercase is not allowed.
@@ -51,11 +54,9 @@ jobs:
           context: ubuntu/
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
-            cmptstks/baseimage:ubuntu
-            cmptstks/baseimage:ubuntu-focal
+            cmptstks/baseimage:ubuntu-jammy            
             cmptstks/baseimage:latest
-            ghcr.io/${{ env.GH_REPO }}:ubuntu
-            ghcr.io/${{ env.GH_REPO }}:ubuntu-focal
+            ghcr.io/${{ env.GH_REPO }}:ubuntu-jammy
             ghcr.io/${{ env.GH_REPO }}:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max

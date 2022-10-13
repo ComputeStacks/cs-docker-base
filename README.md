@@ -1,7 +1,5 @@
 # ComputeStacks Docker Base Images
 
-[![Build Image](https://github.com/ComputeStacks/cs-docker-base/actions/workflows/build-image.yml/badge.svg)](https://github.com/ComputeStacks/cs-docker-base/actions/workflows/build-image.yml)
-
 ## Submitting Issues
 
 If you encounter a technical issue, you may [open an issue](https://github.com/ComputeStacks/cs-docker-base/issues). However, for questions or how-to's, please [post on our forum](https://forum.computestacks.com).
