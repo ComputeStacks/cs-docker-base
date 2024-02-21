@@ -1,4 +1,4 @@
-FROM phusion/baseimage:jammy-1.0.1
+FROM ghcr.io/phusion/baseimage:jammy-1.0.2
 
 LABEL maintainer="https://computestacks.com"
 LABEL org.opencontainers.image.authors="https://computestacks.com"
@@ -22,4 +22,6 @@ RUN set -ex; \
             iputils-ping \
     ; \
     apt-get clean; \
-    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*;
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
+    ; \
+    sed -i 's/cron -f/cron -f -m off/g' /etc/service/cron/run
