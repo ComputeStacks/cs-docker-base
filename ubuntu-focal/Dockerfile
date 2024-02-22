@@ -1,4 +1,4 @@
-FROM phusion/baseimage:focal-1.2.0
+FROM ghcr.io/phusion/baseimage:focal-1.2.0
 
 LABEL maintainer="https://computestacks.com"
 LABEL org.opencontainers.image.authors="https://computestacks.com"
@@ -22,4 +22,6 @@ RUN set -ex; \
             iputils-ping \
     ; \
     apt-get clean; \
-    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*;
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
+    ; \
+    echo 'MAILTO=""' >> /etc/crontab
