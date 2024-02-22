@@ -24,4 +24,4 @@ RUN set -ex; \
     apt-get clean; \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
     ; \
-    sed -i 's/cron -f/cron -f -m off/g' /etc/service/cron/run
+    echo 'MAILTO=""' >> /etc/crontab
