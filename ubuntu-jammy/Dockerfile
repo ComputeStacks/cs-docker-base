@@ -1,4 +1,4 @@
-FROM ghcr.io/phusion/baseimage:jammy-1.0.2
+FROM ghcr.io/phusion/baseimage:jammy-1.0.5
 
 LABEL maintainer="https://computestacks.com"
 LABEL org.opencontainers.image.authors="https://computestacks.com"
